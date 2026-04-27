@@ -37,10 +37,13 @@ public class SecurityConfig {
 
                 // ── Auth (public) ────────────────────────────
                 .requestMatchers(
-                    "/auth/signin",
-                    "/auth/signout",
-                    "/auth/signin/request-otp",   // ← add
-                    "/auth/signin/verify-otp"     // ← add
+                            "/",                 // root
+                            "/test",             // test endpoint
+
+                         "/auth/signin",
+                        "/auth/signout",
+                        "/auth/signin/request-otp",
+                    "/auth/signin/verify-otp"
                 ).permitAll()
 
                 // ── Registration (public) ────────────────────
