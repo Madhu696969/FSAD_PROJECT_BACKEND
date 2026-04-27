@@ -1,0 +1,66 @@
+# =========================
+# Maven / Build
+# =========================
+target/
+*.jar
+*.war
+*.class
+
+# =========================
+# Logs
+# =========================
+logs/
+*.log
+
+# =========================
+# Environment files (IMPORTANT)
+# =========================
+.env
+.env.*
+
+# =========================
+# IDE - IntelliJ
+# =========================
+.idea/
+*.iml
+out/
+*.iws
+*.ipr
+
+# =========================
+# IDE - Eclipse
+# =========================
+.classpath
+.project
+.settings/
+bin/
+
+# =========================
+# IDE - VS Code
+# =========================
+.vscode/
+
+# =========================
+# Spring Boot / System files
+# =========================
+*.DS_Store
+Thumbs.db
+
+# =========================
+# OS files
+# =========================
+.DS_Store
+desktop.ini
+
+# =========================
+# Dependency caches
+# =========================
+.mvn/
+mvnw
+mvnw.cmd
+
+# =========================
+# Security (DO NOT COMMIT)
+# =========================
+application.properties
+application.yml
