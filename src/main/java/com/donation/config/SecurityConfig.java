@@ -55,7 +55,7 @@ public class SecurityConfig {
                 .requestMatchers("/consumer/**").hasRole("CONSUMER")
 
                 // ── Everything else ──────────────────────────
-                .anyRequest().authenticated()
+                .anyRequest().permitAll()
             )
             .addFilterBefore(jwtAuthFilter, UsernamePasswordAuthenticationFilter.class);
 
